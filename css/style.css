@@ -1,0 +1,829 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+p {
+    color: green;
+    line-height: 25px;
+}
+/* ----------------------Head---------------------*/
+
+.head {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    color: whitesmoke;
+}
+
+.head .content {
+    padding: 30px;
+}
+
+.head span {
+    opacity: 0.7;
+    margin-top: 15px;
+}
+
+.head hr {
+    width: 30px;
+    height: 1px;
+    margin: 20px 0 0 20px;
+    background: white;
+    opacity: 0.7;
+}
+
+.social_media i {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #4d8b55;
+    border: 2px solid #4d8b55;
+    border-radius: 50%;
+    margin-left: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.social_media i:hover {
+    border: 2px solid #fff;
+    color: white;
+}
+
+/* ----------------------Header---------------------*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    background: #4d8b55;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    margin: 20px;
+    display: block;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.3s;
+    position: flex;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 13px;
+    right: 32px;
+    font-size: 38px;
+    margin-left: 50px;
+    background: #4d8b55;
+    cursor: pointer;
+}
+
+.sidenav .closebtn:hover {
+    color: white;
+}
+
+.menu_items {
+    margin-top: 20px;
+}
+
+.hamburger-icon {
+    position: absolute;
+    z-index: 1000;
+    right: 14.5%;
+    top: 30px;
+    cursor: pointer;
+    display: inherit;
+}
+
+/* ----------------------home---------------------*/
+
+.home {
+    position: relative;
+    z-index: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.home .item {
+    width: 100%;
+}
+
+.home img {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.home::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: -1;
+}
+
+.home .heading {
+    position: relative;
+    z-index: 10;
+    color: white;
+    text-align: center;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.home .heading h1 {
+    color: white;
+    margin-top: 0;
+}
+
+.heading h1 {
+    font-size: 120px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    line-height: 120px;
+}
+
+.heading h1 span {
+    color: #4d8b55;
+}
+
+.heading p {
+    color: white;
+    line-height: 30px;
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+button {
+    background: #4d8b55;
+    padding: 25px 80px;
+    border: none;
+    color: white;
+    border-radius: 50px;
+    font-size: 16px;
+    margin-top: 25px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+button:hover {
+    background: white;
+    color: #4d8b55;
+}
+
+/* ----------------Main Course-------------------*/  
+
+.top {
+    margin-top: 100px;
+    text-transform: uppercase;
+}
+
+.mtop{
+    margin-top: 50px;
+}
+
+.container {
+    max-width: 100%;
+    margin: auto;
+}
+
+.heading h2 {
+    font-size: 50px;
+    margin-top: 15px;
+}
+
+.heading h5 {
+    color: black;
+    font-size: 18px;
+}
+
+.heading span {
+    color: #4d8b55;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu h3 {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* ----------------DimsumPastry-------------------*/ 
+
+.top2 {
+    margin-top: 100px;
+    text-transform: uppercase;
+}
+
+.mtop2{
+    margin-top: 50px;
+}
+
+.container2 {
+    max-width: 100%;
+    margin: auto;
+}
+
+.heading2 h2 {
+    font-size: 50px;
+    margin-top: 15px;
+}
+
+.heading2 span {
+    color: #4d8b55;
+}
+
+.menu2 {
+    text-align: center;
+}
+
+.menu2 h3 {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* ----------------wrapper-------------------*/
+
+.heading2 h1 {
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 80px;
+    color: white;
+}
+
+.heading2 h1 span {
+    color: #77d784;
+}
+
+.heading2 .add label {
+   letter-spacing: 10%;
+}
+
+.left, .right {
+    width: 50;
+    margin: 20px;
+}
+
+.wrapper {
+    color: white;
+    background: url(../img/w1.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper .left,
+.wrapper .right {
+    padding-top: 10%;
+}
+
+.wrapper .right img {
+    float: right;
+}
+
+.wrapper .text {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.wrapper i {
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+.wrapper h5 {
+    color: #77d784;
+}
+
+/* ----------------list-------------------*/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.list {
+    background-color: #4d8b55;
+    text-align: center;
+    padding-top: 7%;
+    padding-bottom: 30px;
+}
+
+.list p {
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.list .box {
+    border-right: 2px solid rgba(255,255,255,0.5);
+    margin-top: 50px;
+}
+
+.list .box:nth-child(3),
+.list .box:nth-child(6) {
+    border: none;
+}
+
+/* ----------------Drink Menu-------------------*/
+
+.heading3 {
+    text-align: center;
+    margin-top: 2rem;
+    text-transform: uppercase;
+}
+
+.heading3 h2 {
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+.heading3 span {
+    color: #4d8b55;
+}
+
+.container4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(/img/backminum.jpg) #030728 no-repeat center;
+}
+
+.card-list1 .card-items1{
+    color: #fff;
+    width: 400px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.card-list1 .card-items1 p {
+    color: #fff;
+}
+.card-list1 .card-items1 .icedcup-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    border: 3px solid #fff;
+    padding: 4px;
+}
+
+.card-list1 .card-items1 .price-drink {
+    font-size: 1.15rem;
+    color: #e3e3e3;
+    font-weight: 500;
+    margin: 14px 0 15px;
+}
+
+
+/* ----------------Best Seller-------------------*/
+
+.bestseller .heading2 {
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.bestseller p {
+    color: black;
+}
+
+.bestseller-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin-top: 2rem;
+}
+
+.bestseller-container .box {
+    flex: 1 1 18rem;
+    position: relative;
+    height: 200px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.bestseller-container .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.bestseller-container .box img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.bestseller-container .box h2 {
+   position: absolute;
+   bottom: 1rem;
+   left: 1rem;
+   font-weight: 400;
+   font-size: 1.2rem;
+   background: #4d8b55;
+   background-color: rgba(119,116,116,0.583);
+   padding: 8px;
+   border-radius: 0.5rem;
+}
+
+.bestseller-container .box:hover h2 {
+    background: #4d8b55;
+    color: wh;
+}
+
+/*--------Opentime---------*/
+.opentime-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 10rem;
+}
+
+.opentime-container .box {
+    flex: 1 1 22rem;
+    position: relative;
+    height: 500px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.opentime-container .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+/*----------Owner quotes-----------*/
+
+.review .heading4 h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+.review .heading4 span {
+    color: #4d8b55;
+}
+.review .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+    gap: 1.5rem;
+}
+
+.review .box-container .box {
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.review .box-container .box p {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: black;
+    padding: 2rem 0;
+}
+
+.review .box-container .box .user {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review .box-container .box h3 {
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: black;
+}
+
+/*-----------Footer------------*/
+#contact {
+    background: #4d8b55;
+}
+
+.main1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 200px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.footer {
+    padding: 20px 10;
+}
+
+.list2 {
+    width: 25%;
+}
+
+.list2 ul {
+    list-style-type: none;
+}
+
+.list2 h4 {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.list2 h4::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 70px;
+    left: 0;
+    bottom: -10px;
+    background: white;
+}
+
+.list2 ul li:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.list2 ul li a{
+    color: black;
+    font-size: 15px;
+    display: block;
+    transition: .3s;
+}
+
+.list2 ul p{
+    color: black;
+    font-size: 15px;
+    display: block;
+    transition: .3s;
+}
+
+.list2 ul li a:hover {
+    color: black;
+    transform: translateX(10px);
+}
+
+.list2 .social a{
+    height: 40px;
+    width: 40px;
+    background: white;
+    color: #4d8b55;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 15px;
+    transition: .3s;
+    margin-right: 10px;
+}
+
+.list2 .social a:hover {
+    transform: scale(1.1);
+}
+
+.end-text {
+    background: black;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.end-text p {
+    color: white;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.end-text span {
+    color: #4d8b55;
+}
+
+/*---------Responsive------------*/
+
+@media (max-width: 390px){
+    .head{
+        margin-bottom: -70px;
+    }
+    .heading{
+        padding: -35px 0;
+    }
+
+    .home .heading h1{
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .left, .right {
+        width: 30;
+        margin: 10px 6px;
+    }
+
+    .wrapper .heading2 h1,
+    .wrapper .heading2 span{
+        font-size: 20px;
+        margin-top: 10px;
+        padding: 5px;
+    }
+
+    .wrapper .left .heading2 p {
+        font-size: 15px;
+        font-weight: lighter;
+        margin: 20px 4px;
+    }
+
+    .wrapper .heading2  .flex  i{
+        margin-top: 5px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 428px){
+    .heading{
+        margin-top: -40px;
+    }
+    .home .heading h1{
+        font-size: 58px;
+        line-height: 58px;
+    }
+
+    .home .heading p{
+        font-size: 15px;
+    }
+
+    .home .heading button{
+        padding: 20px 80px;
+    }
+
+    .top .heading h2{
+        font-size: 40px;
+    }
+    .top .item .text h3{
+        font-size: 18px;
+    }
+
+    .top .item .text p{
+        font-size: 12px;
+    }
+
+    .heading2 {
+        margin-top: -60px;
+    }
+
+    .top2 .heading2 h2{
+        font-size: 40px;
+    }
+
+    .top2 .item .text h3{
+        font-size: 18px;
+    }
+
+    .top2 .item .text p{
+        font-size: 12px;
+    }
+
+    .wrapper .heading2 h1 span{
+        font-size: 70px;
+        margin-top: 10px;
+    }
+
+    .wrapper .heading2 p {
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        display: grid;
+    }
+
+    .heading3 h2{
+        font-size: 35px;
+    }
+
+    .bestseller .heading2 h2{
+        font-size: 35px;
+    }
+
+    .bestseller .heading2 p{
+        font-size: 15px;
+    }
+
+    .opentime-container{
+        display: flex;
+        gap: 0.2rem;
+        margin-top: -5px;
+        display: block;
+    }
+
+    .main1{
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 50px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+}
+@media only screen and (max-width:768px) {
+    
+    .head .social_media,
+    .opentime .left,
+    .wrapper .right {
+        display: none;
+    }
+
+    .heading h1{
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    .menu .heading{
+        margin-top: -100px;
+    }
+    .heading h1 {
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    .menu {
+        margin-top: 50%;
+    }
+
+    .left, .right{
+        width: 100%;
+    }
+
+    .list2 {
+        width: 50%;
+        margin-bottom: 30%;
+    }
+
+    .wrapper .heading2 h1{
+        font-size: 80px;
+        margin-top: 0.2px;
+    }
+
+    .wrapper .heading2 p{
+        font-weight: bold;
+    }
+
+    
+}
